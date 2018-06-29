@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.github.petrusaugusto.phoneedittext_demo.MainActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.github.petrusaugusto.phoneedittext.PhoneEditText
+            android:id="@+id/phone_mask1"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number (Full - 9/9 Digits)"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp"
+            app:fields="phone|local|country"
+            app:digitsType="digits_both"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.github.petrusaugusto.phoneedittext.PhoneEditText
+            android:id="@+id/phone_mask2"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number (Changed Programatically)"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Not masked (Normal EditText)"/>
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

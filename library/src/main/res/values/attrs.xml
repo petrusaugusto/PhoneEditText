@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PhoneEditText">
+        <!-- Fields to View
+            (Phone == PhoneNumber,
+             Local == Area Code (DDD),
+             Country == Country Code -->
+        <attr name="fields" format="integer">
+            <flag name="phone" value="0x01"/>
+            <flag name="local" value="0x02"/>
+            <flag name="country" value="0x04"/>
+        </attr>
+
+        <!-- Number of digits to Phone Number -->
+        <attr name="digitsType" format="enum">
+            <enum name="digits_both" value="0"/>
+            <enum name="digit_8" value="1"/>
+            <enum name="digit_9" value="2"/>
+        </attr>
+
+        <attr name="validateOnOut" format="boolean"/>
+
+        <!-- Text to show on error (invalid value) -->
+        <attr name="maskErrorText" format="string"/>
+    </declare-styleable>
+</resources>

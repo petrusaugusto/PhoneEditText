@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="phoneedittext_lib_name">PhoneEditText</string>
+    <string name="phoneedittext_invalid_mask_err_text">O telefone digitado é inválido</string>
+</resources>
